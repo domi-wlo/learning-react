@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import {settings} from '../../data/dataStore';
 import Creator from '../Creator/Creator.js';
-import Icon from '../Icon.js'
+import Icon from '../Icon.js';
 
 class Column extends React.Component {
   state = {
+    // eslint-disable-next-line react/prop-types
     cards: this.props.cards || [],
   }
 
@@ -22,9 +23,9 @@ class Column extends React.Component {
           ...state.cards,
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
-            title
-          }
-        ]
+            title,
+          },
+        ],
       }
     ));
   }
@@ -32,6 +33,7 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
+        {/* eslint-disable-next-line react/prop-types */}
         <h3 className={styles.title}><span className={styles.icon}><Icon name={this.props.icon} /></span>{this.props.title}</h3>
         <div>
           {this.state.cards.map(({key, ...cardProps}) => (
@@ -42,7 +44,7 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
