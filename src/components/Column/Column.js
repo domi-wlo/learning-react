@@ -17,7 +17,6 @@ class Column extends React.Component {
     const {title, icon, cards} = this.props;
     return (
       <section className={styles.component}>
-        {/* eslint-disable-next-line react/prop-types */}
         <h3 className={styles.title}><span className={styles.icon}><Icon name={icon} /></span>{title}</h3>
         <div>
           {cards.map(cardData => (
