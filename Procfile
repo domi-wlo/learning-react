@@ -1,1 +1,1 @@
-web: server-play
+web: npm run server-play
