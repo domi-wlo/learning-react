@@ -9,7 +9,7 @@ import {
 
 const mapStateToProps = (state) => ({
   searchString: getSearchString(state),
-  countVisible: countVisibleCards(state, state.searchString),
+  countVisible: countVisibleCards(state),
   countAll: countAllCards(state),
 });
 

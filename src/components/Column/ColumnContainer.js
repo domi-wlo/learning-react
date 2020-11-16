@@ -3,7 +3,7 @@ import Column from './Column';
 import {getCardsForColumns, createActionAddCard} from '../../redux/cardsRedux.js';
 
 const mapStateToProps = (state, props) => ({
-  cards: getCardsForColumns(state, props.id, state.searchString),
+  cards: getCardsForColumns(state, props.id),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
