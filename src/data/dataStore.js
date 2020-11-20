@@ -1,6 +1,9 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  className: {
+    active: 'active',
+  },
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -10,8 +13,30 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  header: {
+    icon: 'cat',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  homePage: {
+    name: 'Home',
+    linkTo: '/',
+  },
+  infoPage: {
+    name: 'Info',
+    linkTo: '/info',
+    title: 'Lorem Ipsum',
+    image: 'https://cdn.pixabay.com/photo/2019/12/20/14/09/tiger-4708507_960_720.jpg',
+    paragraphTitle: 'Info',
+    paragraphContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },  
+  faqPage: {
+    name: 'FAQ',
+    linkTo: '/faq',
+    title: 'FAQ - Frequent Asked Questions',
+    image: 'https://cdn.pixabay.com/photo/2017/04/20/10/11/questions-2245264_960_720.jpg',
+    paragraphContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
 };
 
 export const pageContents = {
