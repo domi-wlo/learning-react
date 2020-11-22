@@ -11,6 +11,7 @@ class SearchResults extends React.Component {
     icon: PropTypes.string,
     cards: PropTypes.array,
     searchString: PropTypes.string,
+    changeSearchString: PropTypes.func,
   }
   
   state = {
@@ -18,13 +19,12 @@ class SearchResults extends React.Component {
   }
 
   handleChange(){
-    this.setState({
-      value: window.location.pathname.slice(8),
-    });
+    this.props.changeSearchString(window.location.pathname.slice(8));
   }
 
   render() {
     const {cards} = this.props;
+    this.handleChange();
     return (
       <section className={styles.component}>
         <h3 className={styles.title}><span className={styles.icon}><Icon name='search' /></span>Results</h3>
