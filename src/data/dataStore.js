@@ -104,6 +104,12 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things NOT to do <sup>soon!</sup>',
+    description: 'Procrastination is our religion!',
+    image: 'https://cdn.pixabay.com/photo/2016/05/10/21/50/meditation-1384758_960_720.jpg',
+  },
 ];
 
 const columns = [
@@ -127,6 +133,12 @@ const columns = [
   },
   {
     id: 'column-4',
+    listId: 'list-2',
+    title: 'Random',
+    icon: 'splotch',
+  },
+  {
+    id: 'column-5',
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
@@ -163,6 +175,21 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'Jupyter',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Master',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-4',
+    title: '123456',
   },
 ];
 
