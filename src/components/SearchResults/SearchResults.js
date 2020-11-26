@@ -14,9 +14,6 @@ class SearchResults extends React.Component {
     changeSearchString: PropTypes.func,
   }
   
-  state = {
-    value: this.props.searchString,
-  }
 
   handleChange(){
     this.props.changeSearchString(window.location.pathname.slice(8));
