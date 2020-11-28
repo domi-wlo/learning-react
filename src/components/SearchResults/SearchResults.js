@@ -10,18 +10,10 @@ class SearchResults extends React.Component {
     title: PropTypes.node,
     icon: PropTypes.string,
     cards: PropTypes.array,
-    searchString: PropTypes.string,
-    changeSearchString: PropTypes.func,
-  }
-  
-
-  handleChange(){
-    this.props.changeSearchString(window.location.pathname.slice(8));
   }
 
   render() {
     const {cards} = this.props;
-    this.handleChange();
     return (
       <section className={styles.component}>
         <h3 className={styles.title}><span className={styles.icon}><Icon name='search' /></span>Results</h3>

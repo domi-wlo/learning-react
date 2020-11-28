@@ -1,18 +1,19 @@
 import {connect} from 'react-redux';
 import {getFilteredCards} from '../../redux/cardsRedux.js';
 import SearchResults from './SearchResults';
-import {
-  getSearchString,
-  createAction_changeSearchString,
-} from '../../redux/searchStringRedux';
+// import createAction_changeSearchString from '../../redux/searchStringRedux.js';
 
-const mapStateToProps = (state) => ({
-  searchString: getSearchString(state),
-  cards: getFilteredCards(state),
-});
+const mapStateToProps = (state) => {
 
-const mapDispatchToProps = (dispatch) => ({
-  changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
-});
+  const searchString = window.location.pathname.slice(8);
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
+  return {
+    cards: getFilteredCards(state, searchString),
+  };
+};
+
+// const mapDispatchToProps = (dispatch) => ({
+//   changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
+// });
+
+export default connect(mapStateToProps)(SearchResults);
